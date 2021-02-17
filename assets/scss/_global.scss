@@ -5,8 +5,6 @@ body{
 
 .grid{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 1fr;
     grid-gap: 1.8em 2em;
     max-width: 1440px;
     margin: 5em auto;
@@ -58,10 +56,10 @@ body{
 .intro{
     font-weight: var(--fw-600);
     color: var(--clr-primary-400);
+    font-size: 1.15rem;
 }
 .content{
     color: var(--clr-neutral-300);
-    font-size: var(--fs-primary);
 }
 
 .testimonial-1{
@@ -81,8 +79,9 @@ body{
 }
 
 @media (min-width: 768px){
-    .content{
-        font-size: 1.1rem;
+    .grid{
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 1fr;
     }
 
     .testimonial-1{
